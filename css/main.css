@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700');
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family:  'Montserrat', 'sans-serif';
+  font-weight: 400;
+}
+
+body {
+  padding: 8px 16px;
+}
+
+hr {
+  border-top: 1px solid #ddd;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  margin: 5px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 8px 16px;
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 400;
+}
+
+p {
+  margin: 8px 16px;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+blockquote {
+  margin: 8px 32px;
+  font-style: italic;
+  font-weight: 300;
+  border-left: 1px solid #999;
+  padding: 4px 8px;
+}
+
+/* All Button Styles */
+button {
+  border: 0;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.35);
+  color: #333;
+  align-self: flex-end;
+  margin: 4px;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.35);
+}
+
+button:active {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
+}
+
+
+
+:root {
+    --default-colour: #ddd;
+    --primary-colour: #359aff;
+    --primary-hover-colour: #5cadff;
+    --primary-active-colour: #2290ff;
+    --primary-bd-colour: #999;
+    --primary-bd-colour-hover: #666;
+    --secondary-colour: #ddd;
+    --secondary-hover-colour: #efefef;
+    --secondary-active-colour: #dedede;
+
+    --success-colour: #00ff2c;
+    --success-hover-colour: #2dff50;
+    --success-active-colour: #00db25;
+    --warning-colour: #FFD700;
+    --warning-hover-colour: rgb(255, 225, 53);
+    --warning-active-colour: rgb(238, 202, 0);
+    --danger-colour: #ff1300;
+    --danger-hover-colour: #ff5144;
+    --danger-active-colour: #d40e00;
+    --block-padding: 12px 16px;
+    --block-width: 100%;
+    --default-border: 1px solid var(--primary-bd-colour);
+    --default-border-hover: 1px solid var(--primary-bd-colour-hover);
+}
+
+/* Alert Styles */
+.alert {
+  width: var(--block-width);
+  padding: var(--block-padding);
+  border-radius: 3px;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.35);
+  background-color: var(--primary-colour);
+  margin: 8px 0px;
+  color: #333;
+  text-align: left;
+}
+
+.btn {
+  background-color: var(--primary-colour);
+}
+
+.btn:hover {
+  background-color: var(--primary-hover-colour);
+}
+
+.btn:active {
+  background-color: var(--primary-active-colour);
+  
+}
+
+[class*="-secondary"]
+{
+  background-color: var(--secondary-colour);
+}
+
+[class*="-success"] {
+  background-color: var(--success-colour);
+}
+
+
+[class*="-warning"] {
+  background-color: var(--warning-colour);
+}
+
+
+[class*="-danger"] {
+  background-color: var(--danger-colour);
+}
+
+.default-bg {
+    background-color: var(--default-colour);
+}
+
+.container {
+    width: 100%;
+    padding: 15px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px 16px;
+}
+
+.cell {
+  padding: 8px 16px;
+  margin: 4px 8px;
+  
+}
+
+.cell-1 {
+  width: calc(8.33% - 16px);
+}
+
+.cell-2 {
+    width: calc(16.66% - 16px);
+}
+
+.cell-3 {
+  width: calc(25% - 16px);
+}
+
+.cell-4 {
+  width: calc(33.33% - 16px);
+}
+.cell-5 {
+    width: calc(41.66% - 16px);
+}
+
+.cell-6 {
+  width: calc(50% - 16px);
+}
+
+.cell-7 {
+  width: calc(58.33% - 16px);
+}
+.cell-8 {
+  width: calc(66.66% - 16px);
+}
+
+.cell-9 {
+    width: calc(75% - 16px);
+}
+
+.cell-10 {
+    width: calc(83.33% - 16px);
+}
+
+.cell-11 {
+    width: calc(91.66% - 16px);
+}
+
+.cell-12 {
+  width: calc(100% - 16px);
+}
+
+.content-box {
+  display: block;
+  padding: var(--block-padding);
+  border-radius: 3px;
+  height: 100%;
+  /* margin: 4px 8px; */
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: box-shadow .5s ease-in-out;
+}
+
+.content-box:hover {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.35);
+}
+
+.content-header {
+  margin: 8px 0px;
+  text-align: center;
+  border-bottom: 1px solid var(--primary-bd-colour);
+}
+
+
+/* Button Sizes */
+.btn-lg {
+  padding: 16px 32px;
+}
+
+.btn-sm {
+  padding: 4px 8px;
+}
+
+.btn-block {
+  width: 100%;
+  display: block;
+}
+
+/* Button Backgrounds and Types */
+
+
+.btn-secondary:hover {
+  background-color: var(--secondary-hover-colour);
+}
+
+.btn-secondary:active {
+  background-color: var(--secondary-active-colour);
+}
+
+
+.btn-success:hover {
+  background-color: var(--success-hover-colour);
+}
+
+.btn-success:active {
+  background-color: var(--success-active-colour);
+}
+
+
+.btn-warning:hover {
+  background-color: var(--warning-hover-colour);
+}
+
+.btn-warning:active {
+  background-color: var(--warning-active-colour);
+}
+
+.btn-danger:hover {
+  background-color: var(--danger-hover-colour);
+}
+
+.btn-danger:active {
+  background-color: var(--danger-active-colour);
+}
+
+@media only screen and (max-width: 768px) {
+  
+  [class*="cell-"] {
+    width: 100% !important;
+  }
+}
